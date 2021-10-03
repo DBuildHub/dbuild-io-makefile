@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "$1:" >> $(pwd)/makefile
+for cmd in ${@:2} do
+  echo "\t$cmd" >> $(pwd)/makefile
+done

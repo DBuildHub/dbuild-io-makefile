@@ -1,0 +1,6 @@
+#!/bin/bash
+fname="makefile"
+if [ $# -eq 1 ]; then
+  fname=$1.$fname
+fi
+touch $fname
